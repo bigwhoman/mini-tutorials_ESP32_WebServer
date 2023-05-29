@@ -102,3 +102,7 @@ Now it will start monitoring the device. <br>
 
 ![image](https://github.com/bigwhoman/mini-tutorials_ESP32_WebServer/assets/79264715/12307210-bcb8-4a97-b7b1-45b05e75be2e)
 
+## Running A webserver
+First, we need to see how to upload a file on our ESP32 filesystem. <br> 
+To do this, we need to first add an extention to the arduino ide <br>
+First get the 
