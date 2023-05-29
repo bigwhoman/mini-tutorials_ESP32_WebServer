@@ -104,5 +104,25 @@ Now it will start monitoring the device. <br>
 
 ## Running A webserver
 First, we need to see how to upload a file on our ESP32 filesystem. <br> 
+You might need to install esptools.py on pip
+```Shell
+python -m pip install esptool
+```
 To do this, we need to first add an extention to the arduino ide <br>
-First get the 
+First get the <b>ESP32FS</b> drectory from files in the git, after that add it to tools in arduino install directory ( for me it was ~/Downloads/arduino-1.8.19/tools ).<br>
+Now an option would be added to the arduino ide which you could use to upload files onto ESP32 memory : <b>Tools -> ESP32 Sketch Data Upload</b>. <br>
+Now to upload files onto the ESP32, there should be a folder named <b>data</b> in the same directory as the .ino file. <br>
+I have added a simple program and the related html,css file in the simple_server.<br>
+Now download the whole directory and open the <b>ESP32_Async_Web_Server.ino</b> file and after compiling the file, you should upload the data onto the module.<br>
+
+![image](https://github.com/bigwhoman/mini-tutorials_ESP32_WebServer/assets/79264715/0851ba9b-adf9-4b17-b417-2a0342afba47)
+
+Now change your code to get the WiFi <br>
+
+![image](https://github.com/bigwhoman/mini-tutorials_ESP32_WebServer/assets/79264715/cd15eeba-a200-4f92-8ca7-ee57241d1ca3)
+
+![image](https://github.com/bigwhoman/mini-tutorials_ESP32_WebServer/assets/79264715/621fda4a-e3a9-4bac-8244-c6ff2c9f0aa2)
+
+Now lets connect to 172.27.52.189 to see our server.<br>
+
+![image](https://github.com/bigwhoman/mini-tutorials_ESP32_WebServer/assets/79264715/7d8bb0ab-b82f-4c6f-a7b2-f299523c0ef1)
