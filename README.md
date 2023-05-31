@@ -108,10 +108,22 @@ You might need to install esptools.py on pip
 ```Shell
 python -m pip install esptool
 ```
+
+
 To do this, we need to first add an extention to the arduino ide <br>
 First get the <b>ESP32FS</b> drectory from files in the git, after that add it to tools in arduino install directory ( for me it was ~/Downloads/arduino-1.8.19/tools ).<br>
 Now an option would be added to the arduino ide which you could use to upload files onto ESP32 memory : <b>Tools -> ESP32 Sketch Data Upload</b>. <br>
 Now to upload files onto the ESP32, there should be a folder named <b>data</b> in the same directory as the .ino file. <br>
+Download the .zip WebAsync library from link below.
+
+<li>https://github.com/me-no-dev/ESPAsyncWebServer</li>
+
+![image](https://github.com/bigwhoman/mini-tutorials_ESP32_WebServer/assets/79264715/4318690e-f508-462c-9574-65cd70f6a0f7)
+
+Now add it to the arduino ide libraries as a zip
+```
+Sketch -> Include Library -> Add .zip Library
+```
 I have added a simple program and the related html,css file in the simple_server.<br>
 Now download the whole directory and open the <b>ESP32_Async_Web_Server.ino</b> file and after compiling the file, you should upload the data onto the module.<br>
 
