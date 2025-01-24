@@ -51,11 +51,15 @@ After this part, we need a micro-usb cable to connect our device to our PC. <br>
 
 When you connect the device, a port would appear on /dev named mainly /dev/tty* where * would be USB 
 
+
 ![image](https://github.com/bigwhoman/mini-tutorials_ESP32_WebServer/assets/79264715/bb063df4-adf9-47a2-a2af-5f60dd5802e3)
 
 <br>
 
 Now go to <b>Tools -> Port</b> and select your serial port ( probably /dev/ttyUSBx)
+
+
+<b>**note : If a usb option is not shown, it means that the driver is having some problems. Removing brltty could sometimes fix this issue with esp modules.</b>
 
 <br>
 
